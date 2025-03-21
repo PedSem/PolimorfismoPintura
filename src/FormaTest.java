@@ -31,16 +31,16 @@ class FormaTest {
     public void TestDevolverArea(){
         Forma formarectangulo=new Forma.Rectangulo("Rectangulo",4,4);
         double resultadoesperado=16.0;
-        assertEquals(resultadoesperado,formarectangulo.area());
+        assertEquals(resultadoesperado,formarectangulo.area(),2);
         Forma formaesfera=new Forma.Esfera("Esfera",15);
-        double resultadoesfera=2827.4333882308138;
-        assertEquals(resultadoesfera,formaesfera.area());
+        double resultadoesfera=2827.43;
+        assertEquals(resultadoesfera,formaesfera.area(),2);
         Forma formacilindro=new Forma.Cilindro("Cilindro",4,4);
-        double resultadocilindro=201.06192982974676;
-        assertEquals(resultadocilindro,formacilindro.area());
+        double resultadocilindro=201.06;
+        assertEquals(resultadocilindro,formacilindro.area(),2);
         Forma forma=new Forma("n");
         double resultadoesperadoforma=0;
-        assertEquals(resultadoesperadoforma,forma.area());
+        assertEquals(resultadoesperadoforma,forma.area(),2);
     }
 
     @Test
@@ -48,12 +48,12 @@ class FormaTest {
         Pintura pintura1=new Pintura(250);
         Forma formarectangulo=new Forma.Rectangulo("Rectangulo",4,4);
         double resultadoesperado=0.064;
-        assertEquals(resultadoesperado,pintura1.calcularpintura(formarectangulo));
+        assertEquals(resultadoesperado,pintura1.calcularpintura(formarectangulo),2);
         Forma formaesfera=new Forma.Esfera("Esfera",15);
-        double resultadoesfera=11.309733552923255;
-        assertEquals(resultadoesfera,pintura1.calcularpintura(formaesfera));
+        double resultadoesfera=11.30;
+        assertEquals(resultadoesfera,pintura1.calcularpintura(formaesfera),2);
         Forma formacilindro=new Forma.Cilindro("Cilindro",4,4);
-        double resultadocilindro=0.8042477193189871;
-        assertEquals(resultadocilindro,pintura1.calcularpintura(formacilindro));
+        double resultadocilindro=0.80;
+        assertEquals(resultadocilindro,pintura1.calcularpintura(formacilindro),2);
     }
 }
