@@ -15,10 +15,12 @@ public class MainPintura {
                     Pintura pintura2=new Pintura(250);
                     Forma rectangulo1=new Forma.Rectangulo(nombreforma,20,35);
                     System.out.println("Rectangulo:" +pintura2.calcularpintura(rectangulo1));
+                    break;
                 case "Cilindro":
                     Pintura pintura3=new Pintura(250);
                     Forma cilindro1=new Forma.Cilindro(nombreforma, 10,30);
                     System.out.println("Cilindro:" +pintura3.calcularpintura(cilindro1));
+                    break;
 
 
 
