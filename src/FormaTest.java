@@ -5,16 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class FormaTest {
     @Test
     public void TestToString(){
-
         Forma formaesfera=new Forma.Esfera("Esfera",15);
-        String esfera="Esfera";
         Forma formarectangulo=new Forma.Rectangulo("Rectangulo",4,4);
-        String rectangulo="Rectangulo";
         Forma formacilindro=new Forma.Cilindro("Cilindro",4,4);
-        String cilindro="Cilindro";
-        assertEquals(formaesfera.nombre,esfera);
-        assertEquals(formarectangulo.nombre,rectangulo);
-        assertEquals(formacilindro.nombre,cilindro);
+
         String esferastring="Esfera{radio=15.0, nombre='Esfera'}";
         assertEquals(esferastring,formaesfera.toString());
         String rectangulostring="Rectangulo{largo=4.0, ancho=4.0, nombre='Rectangulo'}";
@@ -24,7 +18,6 @@ class FormaTest {
         Forma forma=new Forma("Esfera");
         String formastring="Forma{nombre='Esfera'}";
         assertEquals(formastring,forma.toString());
-
     }
 
     @Test
